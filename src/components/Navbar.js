@@ -11,9 +11,9 @@ const Navbar = () => {
     };
 
     return (
-        <div className='container-fluid bg-white text-gray-800 flex flex-wrap lg:flex-nowrap justify-between'>
+        <div className='container-fluid bg-gray-950 text-white flex flex-wrap lg:flex-nowrap '>
             <div className='flex justify-between items-center w-full md:w-auto'>
-                <a className='navbar-brand' href='#'><img className='w-[30%]' src={logo} alt="Logo" /></a>
+                <a className='navbar-brand w-full' href='#'><img className='w-[32%] ' src={logo} alt="Logo" /></a>
                 <div className='hamburger md:hidden text-2xl' onClick={toggleMobileMenu}>
                     <i className="ri-menu-line"></i>
                 </div>
@@ -22,16 +22,16 @@ const Navbar = () => {
             <div id='desktop' className='navbar hidden md:flex flex-nowrap'>
                 <ul className='navbar-nav flex-row gap-5'>
                     <li className='nav-item'>
-                        <a className='nav-link text-gray-700 text-xl font-semibold font-mono' href='#'>Home</a>
+                        <a className='nav-link text-gray-200 text-xl font-semibold font-["Black Ops One"] hover:text-orange-500 hover:ease-in ease-out duration-500' href='#'>Home</a>
                     </li>
                     <li className='nav-item'>
-                        <a className='nav-link text-gray-700 text-xl font-semibold font-mono' href='#'>Characters</a>
+                        <a className='nav-link text-gray-200 text-xl font-semibold font-["Black Ops One"] hover:text-orange-500 hover:ease-in ease-out duration-500' href='#'>Characters</a>
                     </li>
                     <li className='nav-item'>
-                        <a className='nav-link text-gray-700 text-xl font-semibold font-mono' href='#'>About</a>
+                        <a className='nav-link text-gray-200 text-xl font-semibold font-["Black Ops One"] hover:text-orange-500 hover:ease-in ease-out duration-500' href='#'>About</a>
                     </li>
                     <li className='nav-item'>
-                        <a className='nav-link text-gray-700 text-xl font-semibold font-mono' href='#'>Contact</a>
+                        <a className='nav-link text-gray-200 text-xl font-semibold font-["Black Ops One"] hover:text-orange-500 hover:ease-in ease-out duration-500' href='#'>Contact</a>
                     </li>
                 </ul>
             </div>
@@ -40,16 +40,16 @@ const Navbar = () => {
                 <div id='mobile' className='navbar md:hidden'>
                     <ul className='navbar-nav flex-col gap-5'>
                         <li className='nav-item'>
-                            <a className='nav-link text-gray-700 text-xl font-semibold font-mono' href='#'>Home</a>
+                            <a className='nav-link text-gray-200 text-xl font-semibold font-["Black Ops One"] hover:text-orange-500 hover:ease-in ease-out duration-500' href='#'>Home</a>
                         </li>
                         <li className='nav-item'>
-                            <a className='nav-link text-gray-700 text-xl font-semibold font-mono' href='#'>Characters</a>
+                            <a className='nav-link text-gray-200 text-xl font-semibold font-["Black Ops One"] hover:text-orange-500 hover:ease-in ease-out duration-500' href='#'>Characters</a>
                         </li>
                         <li className='nav-item'>
-                            <a className='nav-link text-gray-700 text-xl font-semibold font-mono' href='#'>About</a>
+                            <a className='nav-link text-gray-200 text-xl font-semibold font-["Black Ops One"] hover:text-orange-500 hover:ease-in ease-out duration-500' href='#'>About</a>
                         </li>
                         <li className='nav-item'>
-                            <a className='nav-link text-gray-700 text-xl font-semibold font-mono' href='#'>Contact</a>
+                            <a className='nav-link text-gray-200 text-xl font-semibold font-["Black Ops One"] hover:text-orange-500 hover:ease-in ease-out duration-500' href='#'>Contact</a>
                         </li>
                     </ul>
                 </div>
