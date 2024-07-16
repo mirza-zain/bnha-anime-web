@@ -1,0 +1,56 @@
+import React from 'react';
+import logo from '../images/logo.svg'
+
+const Navbar = () => {
+    const mobileMenu = () => {
+        const navbar = document.querySelector('#mobile');
+    }
+
+  return (
+    <div className='container-fluid bg-white text-gray-700 flex'>
+      <div className='flex'>
+        <a className='navbar-brand' href=' '><img className='w-[30%]' src={logo} />
+        </a>
+      </div>
+      <div id='desktop' className='navbar flex'>
+        <ul className='navbar-nav flex-row gap-5'>
+            <li className='nav-item '>
+                <a className='nav-link text-gray-900' href=' '>Home</a>
+            </li>
+            <li className='nav-item '>
+                <a className='nav-link text-gray-900' href=' '>Characters</a>
+            </li>
+            <li className='nav-item '>
+                <a className='nav-link text-gray-900' href=' '>About</a>
+            </li>
+            <li className='nav-item '>
+                <a className='nav-link text-gray-900' href=' '>Contact</a>
+            </li>
+        </ul>
+      </div>
+      <div id='mobile' className='navbar hidden'>
+        <div className='hamburger'>
+            <i class="ri-menu-line"></i>
+        </div>
+        <div>
+            <ul className='navbar-nav flex-row gap-5'>
+                <li className='nav-item '>
+                    <a className='nav-link text-gray-900' href=' '>Home</a>
+                </li>
+                <li className='nav-item '>
+                    <a className='nav-link text-gray-900' href=' '>Characters</a>
+                </li>
+                <li className='nav-item '>
+                    <a className='nav-link text-gray-900' href=' '>About</a>
+                </li>
+                <li className='nav-item '>
+                    <a className='nav-link text-gray-900' href=' '>Contact</a>
+                </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Navbar
