@@ -13,7 +13,7 @@ const Navbar = () => {
     return (
         <div className='container-fluid bg-gray-950 text-white flex flex-wrap lg:flex-nowrap '>
             <div className='flex justify-between items-center w-full md:w-auto'>
-                <a className='navbar-brand w-full' href='#'><img className='w-[32%] ' src={logo} alt="Logo" /></a>
+                <a className='navbar-brand w-full' href='/'><img className='w-[32%] ' src={logo} alt="Logo" /></a>
                 <div className='hamburger md:hidden text-2xl' onClick={toggleMobileMenu}>
                     <i className="ri-menu-line"></i>
                 </div>
@@ -22,16 +22,16 @@ const Navbar = () => {
             <div id='desktop' className='navbar hidden md:flex flex-nowrap'>
                 <ul className='navbar-nav flex-row gap-5'>
                     <li className='nav-item'>
-                        <a className='nav-link text-gray-200 text-xl font-semibold font-["Black Ops One"] hover:text-orange-500 hover:ease-in ease-out duration-500' href='#'>Home</a>
+                        <a className='nav-link text-gray-200 text-xl font-semibold font-["Black Ops One"] hover:text-orange-500 hover:ease-in ease-out duration-500' href='/home'>Home</a>
                     </li>
                     <li className='nav-item'>
-                        <a className='nav-link text-gray-200 text-xl font-semibold font-["Black Ops One"] hover:text-orange-500 hover:ease-in ease-out duration-500' href='#'>Characters</a>
+                        <a className='nav-link text-gray-200 text-xl font-semibold font-["Black Ops One"] hover:text-orange-500 hover:ease-in ease-out duration-500' href='/character'>Characters</a>
                     </li>
                     <li className='nav-item'>
-                        <a className='nav-link text-gray-200 text-xl font-semibold font-["Black Ops One"] hover:text-orange-500 hover:ease-in ease-out duration-500' href='#'>About</a>
+                        <a className='nav-link text-gray-200 text-xl font-semibold font-["Black Ops One"] hover:text-orange-500 hover:ease-in ease-out duration-500' href='/about'>About</a>
                     </li>
                     <li className='nav-item'>
-                        <a className='nav-link text-gray-200 text-xl font-semibold font-["Black Ops One"] hover:text-orange-500 hover:ease-in ease-out duration-500' href='#'>Contact</a>
+                        <a className='nav-link text-gray-200 text-xl font-semibold font-["Black Ops One"] hover:text-orange-500 hover:ease-in ease-out duration-500' href='/contact'>Contact</a>
                     </li>
                 </ul>
             </div>
@@ -40,16 +40,16 @@ const Navbar = () => {
                 <div id='mobile' className='navbar md:hidden'>
                     <ul className='navbar-nav flex-col gap-5'>
                         <li className='nav-item'>
-                            <a className='nav-link text-gray-200 text-xl font-semibold font-["Black Ops One"] hover:text-orange-500 hover:ease-in ease-out duration-500' href='#'>Home</a>
+                            <a className='nav-link text-gray-200 text-xl font-semibold font-["Black Ops One"] hover:text-orange-500 hover:ease-in ease-out duration-500' href='/home'>Home</a>
                         </li>
                         <li className='nav-item'>
-                            <a className='nav-link text-gray-200 text-xl font-semibold font-["Black Ops One"] hover:text-orange-500 hover:ease-in ease-out duration-500' href='#'>Characters</a>
+                            <a className='nav-link text-gray-200 text-xl font-semibold font-["Black Ops One"] hover:text-orange-500 hover:ease-in ease-out duration-500' href='/character'>Characters</a>
                         </li>
                         <li className='nav-item'>
-                            <a className='nav-link text-gray-200 text-xl font-semibold font-["Black Ops One"] hover:text-orange-500 hover:ease-in ease-out duration-500' href='#'>About</a>
+                            <a className='nav-link text-gray-200 text-xl font-semibold font-["Black Ops One"] hover:text-orange-500 hover:ease-in ease-out duration-500' href='/about'>About</a>
                         </li>
                         <li className='nav-item'>
-                            <a className='nav-link text-gray-200 text-xl font-semibold font-["Black Ops One"] hover:text-orange-500 hover:ease-in ease-out duration-500' href='#'>Contact</a>
+                            <a className='nav-link text-gray-200 text-xl font-semibold font-["Black Ops One"] hover:text-orange-500 hover:ease-in ease-out duration-500' href='/contact'target='_blank'>Contact</a>
                         </li>
                     </ul>
                 </div>
