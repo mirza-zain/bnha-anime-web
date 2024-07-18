@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Character from './components/Character';
 
 function App() {
+  
   return (
     <Router>
       <div className="App">
