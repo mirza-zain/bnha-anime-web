@@ -6,7 +6,7 @@ const Character = () => {
         {
           profiles.map(pro => {
             return ( 
-          <div key={pro.id} className='flex bg-gray-950 pt-24'>
+          <div key={pro.id} className='flex flex-col md:flex-row bg-gray-950 pt-24'>
             <div className='w-full md:w-1/2 bg-yellow-300 flex justify-center items-center'> 
               <img src={pro.image} alt={pro.name} className='w-[50%] md:w-[25%] h-[100%] object-cover object-center'/> 
             </div>
