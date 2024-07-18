@@ -1,0 +1,6 @@
+body{
+    overflow-x: auto;
+}
+body::-webkit-scrollbar{
+    display: none;
+}

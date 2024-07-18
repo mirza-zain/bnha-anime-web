@@ -21,6 +21,15 @@ const Character = () => {
           </div>
         )})
         }
+        {/* {
+          profiles.map(pro => {
+            return(
+              <div className=''> 
+                
+              </div>
+            )
+          })
+        } */}
     </div>
   );
 };
