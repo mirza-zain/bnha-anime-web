@@ -29,7 +29,7 @@ const Character = () => {
           currProfile.map(pro => {
             return ( 
               <div key={pro.id} className='w-screen h-screen bg-gray-950'> 
-                <img src={pro.image} alt={pro.name} className='w-full h-[35%] md:h-1/2 object-cover object-top'/> 
+                <img src={pro.image} alt={pro.name} className='w-full h-[35%] md:h-1/2 object-cover object-top rounded-md'/> 
                 <h2 className='font-bold font-["Josefin_Sans"] text-center text-lg md:text-2xl text-orange-300'>{pro.name}</h2>
                 <h2 className='text-white font-bold text-lg md:text-xl mb-0 md:mb-2'>Alias: <span className='font-semibold text-sm md:text-lg text-yellow-400'>{pro.alias}</span></h2>
                 <h3 className='text-white font-bold text-lg md:text-xl mb-0 md:mb-2'>Quirk: <span className='font-semibold text-sm md:text-lg text-yellow-400'>{pro.quirk}</span></h3>
