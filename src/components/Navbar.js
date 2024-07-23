@@ -28,7 +28,7 @@ const Navbar = () => {
                         <a className='nav-link text-gray-200 text-xl font-semibold font-["Black Ops One"] hover:text-orange-500 hover:ease-in ease-out duration-500' href='/character'>Characters</a>
                     </li>
                     <li className='nav-item'>
-                        <a className='nav-link text-gray-200 text-xl font-semibold font-["Black Ops One"] hover:text-orange-500 hover:ease-in ease-out duration-500' href='/about'>About</a>
+                        <a className='nav-link text-gray-200 text-xl font-semibold font-["Black Ops One"] hover:text-orange-500 hover:ease-in ease-out duration-500' href='/blog'>Blog</a>
                     </li>
                 </ul>
             </div>
@@ -37,13 +37,13 @@ const Navbar = () => {
                 <div id='mobile' className='navbar md:hidden'>
                     <ul className='navbar-nav flex-col gap-5'>
                         <li className='nav-item'>
-                            <a className='nav-link text-gray-200 text-xl font-semibold font-["Black Ops One"] hover:text-orange-500 hover:ease-in ease-out duration-500' href='/home' target='_'>Home</a>
+                            <a className='nav-link text-gray-200 text-xl font-semibold font-["Black Ops One"] hover:text-orange-500 ease-in-out duration-500' href='/home'>Home</a>
                         </li>
                         <li className='nav-item'>
-                            <a className='nav-link text-gray-200 text-xl font-semibold font-["Black Ops One"] hover:text-orange-500 hover:ease-in ease-out duration-500' href='/character' target='_'>Characters</a>
+                            <a className='nav-link text-gray-200 text-xl font-semibold font-["Black Ops One"] hover:text-orange-500 ease-in-out duration-500' href='/character'>Characters</a>
                         </li>
                         <li className='nav-item'>
-                            <a className='nav-link text-gray-200 text-xl font-semibold font-["Black Ops One"] hover:text-orange-500 hover:ease-in ease-out duration-500' href='/blog' target='_'>Blog</a>
+                            <a className='nav-link text-gray-200 text-xl font-semibold font-["Black Ops One"] hover:text-orange-500 ease-in-out duration-500' href='/blog' >Blog</a>
                         </li>
                     </ul>
                 </div>
