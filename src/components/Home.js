@@ -8,7 +8,7 @@ import Banner from './Banner'
 const Home = () => {
   return (
     <>
-    <div className='container-fluid flex flex-col md:flex-row bg-gray-950 pt-5'>
+    <div className='w-screen flex flex-1 flex-col md:flex-row bg-gray-950'>
          <div className='md:w-1/2 w-full px-4'>
             <h1 className='text-4xl font-["Black_Ops_One"] text-start p-2 font-bold text-yellow-500 hover:text-orange-600 ease-in-out duration-700'>Welcome to <br/><span className='text-orange-700 hover:text-yellow-500 ease-in-out duration-700'>My Hero Academia</span></h1>
             <p className='text-start md:text-justify text-xl w-[90%] md:w-[80%] text-white my-4'>Welcome to the ultimate archive of heroes and villains from My Hero Academia!  

@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 function App() {
   
   return (
-    <div className="App">
+    <div className="App w-screen h-screen flex flex-col">
       <Router>
         < Navbar /> 
         <Routes>
