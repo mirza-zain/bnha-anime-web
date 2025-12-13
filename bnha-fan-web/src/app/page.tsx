@@ -20,6 +20,12 @@ export default function Home() {
           <img src={'/characters/midoriya.webp'}  className="md:w-[30%] w-[35%]" alt="izuku"/>
           <img src={'/characters/bakugo.webp'}  className="md:w-[30%] w-[35%]" alt="izuku"/>
           <img src={'/characters/todoroki.webp'}  className="md:w-[25%] w-[30%]" alt="izuku"/>
+<<<<<<< HEAD
+=======
+          {/* <video autoPlay loop muted className='w-full object-cover'>
+            <source src="/video/hero.mp4" type="video/mp4" />
+          </video>         */}
+>>>>>>> 9dde84f60024165baac926f602745cb37be7c38e
         </div>
       </div>
       <div>
