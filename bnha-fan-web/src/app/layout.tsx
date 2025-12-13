@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import 'remixicon/fonts/remixicon.css'
 import Navbar from "./(Component)/Navbar";
+import Footer from "./(Component)/Footer";
 
 
 export const metadata: Metadata = {
@@ -16,9 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={"bg-[#d6cbba] text-[#0f1516] " + `antialiased`}>
-          <Navbar />
+      <body className={"w-full h-full bg-[#d6cbba] text-[#0f1516] " + `antialiased`}>
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

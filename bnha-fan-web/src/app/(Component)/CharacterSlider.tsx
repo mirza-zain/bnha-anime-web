@@ -17,8 +17,8 @@ export default function CharacterSlider() {
     <div className='w-full max-w-4xl mx-auto p-4'>
       <div className='relative bg-gray-900 text-white rounded-xl overflow-hidden'>
         <div className='flex flex-col md:flex-row items-center'>
-          <div className='w-full md:w-1/2 p-4'>
-            <Image src={current.image} alt={current.name} width={250} height={250} className='w-1/2 h-auto object-cover rounded-lg' />
+          <div className='w-full md:w-1/2 p-4 flex justify-center'>
+            <Image src={current.image} alt={current.name} width={300} height={300} className='w-[300px] h-[300px] object-contain rounded-lg' />
           </div>
           <div className='w-full md:w-1/2 p-5'>
             <h2 className='text-2xl md:text-3xl font-extrabold mb-2'>{current.name}</h2>
