@@ -1,20 +1,42 @@
 'use client'
 
 import Image from 'next/image'
-import { useState } from 'react'
-import { profiles } from '../(data)/profiles'
+import { useEffect, useState } from 'react'
+import { heroes, villains } from '../(data)/profiles'
 
 export default function CharacterSlider() {
+  const [role, setRole] = useState<'hero' | 'villain'>('hero')
   const [index, setIndex] = useState(0)
-  const total = profiles.length
+
+  const data = role === 'hero' ? heroes : villains
+  const total = data.length
 
   const prev = () => setIndex((i) => (i - 1 + total) % total)
   const next = () => setIndex((i) => (i + 1) % total)
 
-  const current = profiles[index]
+  const current = data[index]
+
+  useEffect(() => {
+    setIndex(0)
+  }, [role])
 
   return (
     <div className='w-full max-w-4xl mx-auto p-4'>
+      <div className='flex justify-center gap-3 mb-4'>
+        <button
+          onClick={() => setRole('hero')}
+          className={`px-4 py-2 rounded-md border ${role === 'hero' ? 'bg-orange-500 text-black border-orange-500' : 'bg-gray-800 text-white border-gray-700'}`}
+        >
+          Heroes
+        </button>
+        <button
+          onClick={() => setRole('villain')}
+          className={`px-4 py-2 rounded-md border ${role === 'villain' ? 'bg-orange-500 text-black border-orange-500' : 'bg-gray-800 text-white border-gray-700'}`}
+        >
+          Villains
+        </button>
+      </div>
+
       <div className='relative bg-gray-900 text-white rounded-xl overflow-hidden'>
         <div className='flex flex-col md:flex-row items-center'>
           <div className='w-full md:w-1/2 p-4 flex justify-center'>
@@ -33,7 +55,7 @@ export default function CharacterSlider() {
         </div>
 
         <div className='absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2'>
-          {profiles.map((_, i) => (
+          {data.map((_, i) => (
             <span key={i} className={`h-2 w-2 rounded-full ${i === index ? 'bg-orange-500' : 'bg-gray-600'}`}></span>
           ))}
         </div>
